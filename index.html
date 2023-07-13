@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Administración del Club San Martín</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Administración del Club San Martín de Formosa</h1>
+    <img src="sanmartin.png" alt="logoClubSanMartin">
+  </div>
+ 
+
+  <div id="afiliacion">
+    <h2>Afiliación de socios</h2>
+    <form id="formularioAfiliacion">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      <label for="categoria">Categoría:</label>
+      <select id="categoria">
+        <option value="cadete">Cadete</option>
+        <option value="socioPleno">Socio Pleno</option>
+        <option value="adherente">Adherente</option>
+      </select>
+      <button type="submit">Afiliar</button>
+    </form>
+  </div>
+
+  <div id="listaSocios">
+    <h2>Lista de socios</h2>
+    <ul id="sociosList"></ul>
+  </div>
+
+  <div id="modificacion">
+    <h2>Modificación de datos</h2>
+    <form id="formularioModificacion">
+      <label for="nombreMod">Nombre:</label>
+      <input type="text" id="nombreMod" required>
+      <label for="categoriaMod">Categoría:</label>
+      <select id="categoriaMod">
+        <option value="cadete">Cadete</option>
+        <option value="socioPleno">Socio Pleno</option>
+        <option value="adherente">Adherente</option>
+      </select>
+      <button type="submit">Modificar</button>
+    </form>
+  </div>
+
+  <div id="pagoCuota">
+    <h2>Carga de pago de cuota</h2>
+    <form id="formularioPago">
+      <label for="nombrePago">Nombre:</label>
+      <input type="text" id="nombrePago" required>
+      <button type="submit">Cargar Pago</button>
+    </form>
+  </div>
+
+  <div id="controlAcceso">
+    <h2>Control de acceso</h2>
+    <form id="formularioAcceso">
+      <label for="nombreAcceso">Nombre:</label>
+      <input type="text" id="nombreAcceso" required>
+      <button type="submit">Autorizar Acceso</button>
+      <button type="submit">Denegar Acceso</button>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
